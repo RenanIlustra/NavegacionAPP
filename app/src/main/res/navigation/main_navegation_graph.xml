@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navegation_graph"
+    app:startDestination="@id/emailMainFragment">
+
+    <fragment
+        android:id="@+id/emailMainFragment"
+        android:name="com.renan.componentesvisuaisnavegacao.fragments.EmailMainFragment"
+        android:label="EmailMainFragment"
+        tools:layout="@layout/fragment_email_main">
+        <action
+            android:id="@+id/action_emailMainFragment_to_emailDetailFragment"
+            app:destination="@id/emailDetailFragment" />
+        <action
+            android:id="@+id/action_emailMainFragment_to_emailNewFragment"
+            app:destination="@id/emailNewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailDetailFragment"
+        android:name="com.renan.componentesvisuaisnavegacao.fragments.EmailDetailFragment"
+        android:label="EmailDetailFragment"
+        tools:layout="@layout/fragment_email_detail"/>
+    <fragment
+        android:id="@+id/emailNewFragment"
+        android:name="com.renan.componentesvisuaisnavegacao.fragments.EmailNewFragment"
+        android:label="EmailNewFragment"
+        tools:layout="@layout/fragment_email_new"/>
+</navigation>
