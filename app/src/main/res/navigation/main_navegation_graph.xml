@@ -27,4 +27,48 @@
         android:name="com.renan.componentesvisuaisnavegacao.fragments.EmailNewFragment"
         android:label="EmailNewFragment"
         tools:layout="@layout/fragment_email_new"/>
+    <fragment
+        android:id="@+id/calendarMainFragment"
+        android:name="com.renan.componentesvisuaisnavegacao.fragments.CalendarMainFragment"
+        android:label="CalendarMainFragment"
+        tools:layout="@layout/fragment_calendar_main">
+        <action
+            android:id="@+id/action_calendarMainFragment_to_calendarNewFragment"
+            app:destination="@id/calendarNewFragment" />
+        <action
+            android:id="@+id/action_calendarMainFragment_to_calendarDetailFragment"
+            app:destination="@id/calendarDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarDetailFragment"
+        android:name="com.renan.componentesvisuaisnavegacao.fragments.CalendarDetailFragment"
+        android:label="CalendarDetailFragment"
+        tools:layout="@layout/fragment_calendar_detail"/>
+    <fragment
+        android:id="@+id/calendarNewFragment"
+        android:name="com.renan.componentesvisuaisnavegacao.fragments.CalendarNewFragment"
+        android:label="CalendarNewFragment"
+        tools:layout="@layout/fragment_calendar_new"/>
+    <fragment
+        android:id="@+id/searchMainFragment"
+        android:name="com.renan.componentesvisuaisnavegacao.fragments.SearchMainFragment"
+        android:label="SearchMainFragment"
+        tools:layout="@layout/fragment_email_main">
+        <action
+            android:id="@+id/action_searchMainFragment_to_searchDetailsFragment"
+            app:destination="@id/searchDetailsFragment" />
+        <action
+            android:id="@+id/action_searchMainFragment_to_searchNewFragment"
+            app:destination="@id/searchNewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchDetailsFragment"
+        android:name="com.renan.componentesvisuaisnavegacao.fragments.SearchDetailsFragment"
+        android:label="SearchDetailsFragment"
+        tools:layout="@layout/fragment_search_detail"/>
+    <fragment
+        android:id="@+id/searchNewFragment"
+        android:name="com.renan.componentesvisuaisnavegacao.fragments.SearchNewFragment"
+        android:label="SearchNewFragment"
+        tools:layout="@layout/fragment_search_new"/>
 </navigation>

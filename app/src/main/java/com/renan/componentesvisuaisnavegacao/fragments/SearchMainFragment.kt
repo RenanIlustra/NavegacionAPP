@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.renan.componentesvisuiaisnavegacao.R
 import com.renan.componentesvisuiaisnavegacao.databinding.FragmentSearchMainBinding
 
 class SearchMainFragment : Fragment() {
@@ -24,11 +26,11 @@ class SearchMainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnNew.setOnClickListener {
-
+            findNavController().navigate(R.id.action_searchMainFragment_to_searchNewFragment)
         }
 
         binding.btnDetail.setOnClickListener {
-
+            findNavController().navigate(R.id.action_searchMainFragment_to_searchDetailsFragment)
         }
 
     }
